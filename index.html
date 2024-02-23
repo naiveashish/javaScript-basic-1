@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+        }
+        .room{
+            margin: auto;
+            width: 50%;
+        }
+        </style>
+    <script>
+        function lighton(){
+            document.getElementById("light").src="https://www.w3schools.com/js/pic_bulbon.gif"
+            document.body.style.background= "linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%)";
+        }
+        function lightoff(){
+            document.getElementById("light").src="https://www.w3schools.com/js/pic_bulboff.gif"
+            document.body.style.background= "linear-gradient(to right, #d7d2cc 0%, #304352 100%)";
+        }
+    </script>        
+</head>
+<body>
+    <div class="room">
+    <button onclick="lighton()">Turn on the light</button>
+    <img id="light" style="transform: rotateX(180deg);" src="https://www.w3schools.com/js/pic_bulboff.gif">
+    
+    <button onclick="lightoff()">Turn off light</button>
+    </div>
+    
+</body>
+</html>
